@@ -1,0 +1,32 @@
+[
+  {
+    "name": "big company",
+    "nunberOfEmployees": 10000,
+    "ceo": "mary",
+    "rating:": 2.6
+  },
+  {
+    "name": "small startup",
+    "numberOfEmployees": 3,
+    "ceo": null,
+    "rating": 4
+  },
+  {
+    "name": "nid size",
+    "numberOfEmployees": 50,
+    "ceo": "Karen",
+    "rating": 3.0
+  },
+  {
+    "name": "New Company",
+    "numberOfEmployees": 200,
+    "ceo": "Mike",
+    "rating": 2.9
+  },
+  {
+    "name": "micro",
+    "numberOfEmployees": 1,
+    "ceo": "Mark",
+    "rating": 4.0
+  }
+]

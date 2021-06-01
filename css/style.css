@@ -1,0 +1,26 @@
+.game{
+    width: 100%;
+    border: 1px solid red;
+}
+
+#divQuestion{
+    background-color: teal;
+
+}
+
+#divQuestion{
+    align-content: center;
+    width: 100%;
+    background-color: coral;
+    border: 10px solid blue;
+}
+
+.Option:hover{
+    background-color: red;
+}
+#divTimer{
+    background-color: black;
+    color: green;
+    font-size: 40pt;
+    font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
+}
