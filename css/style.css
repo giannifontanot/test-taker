@@ -1,26 +1,32 @@
 .game{
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid gray;
 }
 
 #divQuestion{
-    background-color: teal;
+    background-color: darkgrey;
 
 }
 
 #divQuestion{
     align-content: center;
     width: 100%;
-    background-color: coral;
-    border: 10px solid blue;
+    background-color: lightsteelblueteal;
+    border: 10px solid darkgrey;
 }
 
 .Option:hover{
-    background-color: red;
+    background-color: steelblue;
 }
 #divTimer{
     background-color: black;
     color: green;
     font-size: 40pt;
     font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
+}
+
+#divAnswer {
+font-weight: bolder;
+
+
 }
