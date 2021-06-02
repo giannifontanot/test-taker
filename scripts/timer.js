@@ -17,7 +17,7 @@ function countdown(minutes, seconds) {
         seconds--;
         divTimer.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
         if (seconds > 0) {
-            timeoutHandle = setTimeout(tick, 100);
+            timeoutHandle = setTimeout(tick, 1000);
         } else {
 
             if (mins > 1) {
