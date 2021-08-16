@@ -1,30 +1,30 @@
 let JsonQuestions = [{
-    "question": "this is question 1",
-    "optionA": "this is option 1A",
-    "optionB": "this is option 1B",
-    "optionC": "this is option 1C",
-    "optionD": "this is option 1D",
+    "question": "What is the year Google was founded?",
+    "optionA": "1998",
+    "optionB": "1989",
+    "optionC": "1899",
+    "optionD": "10,000 AC",
     "answer": "optionA"
 }, {
-    "question": "this is question 2",
-    "optionA": "this is option 2A",
-    "optionB": "this is option 2B",
-    "optionC": "this is option 2C",
-    "optionD": "this is option 2D",
-    "answer": "optionB"
-}, {
-    "question": "this is question 3",
-    "optionA": "this is option 3A",
-    "optionB": "this is option 3B",
-    "optionC": "this is option 3C",
-    "optionD": "this is option 3D",
+    "question": "Who are the founders of Google?",
+    "optionA": "Larry King and Matthew Perry",
+    "optionB": "Jerry Yang and David Filo",
+    "optionC": "Larry Page and Sergey Brin",
+    "optionD": "Steve Jobs and Steve Wozniak",
     "answer": "optionC"
 }, {
-    "question": "this is question 4",
-    "optionA": "this is option 4A",
-    "optionB": "this is option 4B",
-    "optionC": "this is option 4C",
-    "optionD": "this is option 4D",
+    "question": "Who is Google CEO?",
+    "optionA": "Larry Page",
+    "optionB": "Sundar Pichai",
+    "optionC": "Sergey Brin",
+    "optionD": "Eric Schmidt ",
+    "answer": "optionB"
+}, {
+    "question": "Who is Larry Ellison?",
+    "optionA": "Founder of Software Development Laboratories",
+    "optionB": "Founder of Oracle",
+    "optionC": "Licensed pilot",
+    "optionD": "All of the above",
     "answer": "optionD"
 }];
 
