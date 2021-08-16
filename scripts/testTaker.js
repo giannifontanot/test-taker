@@ -5,6 +5,7 @@ let timeoutHandle;
 let score = 0;
 const totalQuestions = JsonQuestions.length;
 
+
 function fShowThisResult() {
     let user = document.getElementById("divUser").value;
     alert(user + ", your score is: " + score);
@@ -18,7 +19,7 @@ function fShowScores() {
     let sScoreContent = "";
     let JsonScores = JSON.parse(localStorage.getItem("JsonScores"));
     for (let i = 0; i < JsonScores.length; i++) {
-        sScoreContent += JsonScores[i].student + " - " + JsonScores[i].score + "\n ";
+        sScoreContent += JsonScores[i].student + " - " + JsonScores[i].score + "</<br>";
     }
     alert(sScoreContent);
     let modal = $('#exampleModal');
@@ -57,14 +58,14 @@ function fNewGame() {
     document.getElementById("divUser").value = "";
 
     score = 0;
-
-
     questionNum = 0;
 
 
 }
 
-function fBegin() {
+function fBegin(e) {
+
+
     if (localStorage.getItem("JsonScores") == null) {
         localStorage.setItem("JsonScores", "[]");
     }
@@ -92,6 +93,5 @@ function fAnswerSelected(answerSelected) {
         questionNum++;
         setTimeout(getNextQuestion, 1000);
     }
-
-
 }
+

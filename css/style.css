@@ -1,32 +1,35 @@
+body{
+    font-family: 'open sans', 'Helvetica Neue', Helvetica, sans-serif, serif
+}
 .game{
     width: 100%;
-    border: 1px solid gray;
+    bxorder: 1px solid red;
 }
 
 #divQuestion{
-    background-color: darkgrey;
+    background-color: teal;
 
 }
 
 #divQuestion{
     align-content: center;
     width: 100%;
-    background-color: lightsteelblueteal;
-    border: 10px solid darkgrey;
+    background-color: coral;
+    border: 10px solid blue;
 }
 
 .Option:hover{
-    background-color: steelblue;
+    background-color: red;
 }
 #divTimer{
-    background-color: black;
+    bxackground-color: black;
     color: green;
     font-size: 40pt;
     font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
 }
 
-#divAnswer {
-font-weight: bolder;
-
-
+.valixgn{
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
 }

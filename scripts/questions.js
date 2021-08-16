@@ -1,30 +1,30 @@
 let JsonQuestions = [{
-    "question": "What are CCS used for?",
-    "optionA": "Make the screen brighter",
-    "optionB": "make the server code better",
-    "optionC": "Format a website",
-    "optionD": "create new databases",
+    "question": "this is question 1",
+    "optionA": "this is option 1A",
+    "optionB": "this is option 1B",
+    "optionC": "this is option 1C",
+    "optionD": "this is option 1D",
+    "answer": "optionA"
+}, {
+    "question": "this is question 2",
+    "optionA": "this is option 2A",
+    "optionB": "this is option 2B",
+    "optionC": "this is option 2C",
+    "optionD": "this is option 2D",
+    "answer": "optionB"
+}, {
+    "question": "this is question 3",
+    "optionA": "this is option 3A",
+    "optionB": "this is option 3B",
+    "optionC": "this is option 3C",
+    "optionD": "this is option 3D",
     "answer": "optionC"
 }, {
-    "question": "What is Bootstrap? ",
-    "optionA": "a Java class",
-    "optionB": "A framework to make development easier.",
-    "optionC": "a server side data store",
-    "optionD": "a javascript virtual machine",
-    "answer": "optionB"
-}, {
-    "question": "What is JQuery",
-    "optionA": "a server language",
-    "optionB": "a database table",
-    "optionC": "a keyboard brand",
-    "optionD": "A library for JS development.",
+    "question": "this is question 4",
+    "optionA": "this is option 4A",
+    "optionB": "this is option 4B",
+    "optionC": "this is option 4C",
+    "optionD": "this is option 4D",
     "answer": "optionD"
-}, {
-    "question": "What is Flexbox?",
-    "optionA": "a Javascript database",
-    "optionB": "A better way to code CSS",
-    "optionC": "a screen saver",
-    "optionD": "a CSS vendor",
-    "answer": "optionB"
 }];
 

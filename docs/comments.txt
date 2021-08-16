@@ -1,0 +1,7 @@
+Very good work on this assignment, Jose! The overall flow of the application functions pretty well.
+A few things that need to improve about the application.
+- Additional time isn't subtracted from the timer if a question is answered incorrectly.
+- I suggest using validation to ensure that users cannot click the "Begin Tests" button without entering input.
+- Additionally, make sure to include a screenshot of the application, a description, and the deployed application URL in
+ the README.
+Great work!
