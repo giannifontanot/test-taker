@@ -72,11 +72,17 @@ function fNewGame() {
     score = 0;
     questionNum = 0;
 
+    fShowScores();
 
 }
 
 function fBegin(e) {
 
+    const userEl = document.getElementById('divUser');
+    if (userEl.value === "") {
+        sendMessage("Please write a User Name.", "secondary");
+        return false;
+    }
 
     if (localStorage.getItem("JsonScores") == null) {
         localStorage.setItem("JsonScores", "[]");
