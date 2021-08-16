@@ -2,7 +2,7 @@
 ![Status Stable](https://img.shields.io/badge/Status-Stable-blue)
 [![MIT License](https://img.shields.io/badge/License-MIT%20License-brightgreen)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 # Test Taker
-This small app will give some questions to the user and is expecting good answers! The User responds a series of questions in one minute, and then earn points for every question answered correctly. If the user does not answer the question correctly, then 5 seconds will be subtracted from the remaining time.
+This small app will give some questions to the user and is expecting good answers! The User responds to a series of questions in one minute, and then earns points for every question answered correctly. If the user does not answer the question correctly, then 5 seconds will be subtracted from the remaining time.
 ## Table of Contents
 - Test Taker
 	* [Installation](#installation)
