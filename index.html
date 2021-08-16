@@ -19,52 +19,58 @@
 <script src="./scripts/questions.js"></script>
 <script src="./scripts/testTaker.js">
 </script>
-<body style="background-color: lightgray">
+<body style="">
+<div class="banner-area">
 
 
-<div class="panel">
-    <div class="panel-header">
-        <h1>Test Taker <small>How far will you get?</small></h1>
-    </div>
-    <div class="panel-body">
-
-
-        <div class="flex-grid tenths game border-primary rounded-more-corners">
-
-            <div class="col-3 col-3-md col-10-sm text-center">Score:
-                <div id="divScore">0</div>
-                <a href="" onclick="fShowScores()">Show Scores</a>
-            </div>
-
-
-            <div class="col-4 col-4-md col-10-sm text-center form-elements">
-                <div id="divQuestion"></div>
-                <div class="Option" id="divOptionA" onclick="fAnswerSelected(this);"></div>
-                <div class="Option" id="divOptionB" onclick="fAnswerSelected(this);"></div>
-                <div class="Option" id="divOptionC" onclick="fAnswerSelected(this);"></div>
-                <div class="Option" id="divOptionD" onclick="fAnswerSelected(this);"></div>
-                <div id="divText">
-
-
-                    <input id="divUser" placeholder="what is your name, stranger?" size="30" type="text"></br>
-                </div>
-                </br></br>
-                <input class="btn primary" id="btnBegin" type="submit" value="Begin test">
-                <div class="Answer" id="divAnswer"></div>
-            </div>
-
-            <div class="col-3 col-3-md col-10-sm text-center">
-                <div class="valign" id="divTimer" style="margin-top:30px;">00:00</div>
-            </div>
+    <div class="panel">
+        <div class="panel-header">
+            <h1>Test Taker <small>How far will you get?</small></h1>
         </div>
+        <div class="panel-body text-center">
 
-    </div>
-    <div class="panel-footer">
-        Panel Footer Area if Needed
+
+            <div class="flex-grid tenths game border-primary rounded-more-corners ">
+
+                <div class="col-3 col-3-md col-10-sm text-center scoreContainer">
+                    <h2>Score: <span id="divScore">0</span></h2>
+                </div>
+
+
+                <div class="col-4 col-4-md col-10-sm text-center form-elements panelQuestions">
+                    <div class="rounded-corners primary" id="divQuestion"></div>
+                    <div class="Option rounded-corners" id="divOptionA" onclick="fAnswerSelected(this);"></div>
+                    <div class="Option rounded-corners" id="divOptionB" onclick="fAnswerSelected(this);"></div>
+                    <div class="Option rounded-corners" id="divOptionC" onclick="fAnswerSelected(this);"></div>
+                    <div class="Option rounded-corners" id="divOptionD" onclick="fAnswerSelected(this);"></div>
+                    <div id="divText">
+
+
+                        <input id="divUser" placeholder="what is your name, stranger?" size="30" type="text"></br>
+                    </div>
+                    </br></br>
+                    <input class="btn primary" id="btnBegin" type="submit" value="Begin test">
+                    <div class="Answer" id="divAnswer"></div>
+                </div>
+
+                <div class="col-3 col-3-md col-10-sm text-center timerContainer">
+                    <div class="valign" id="divTimer">00:00</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <button class="btn" id="message" width="100%">asdf</button></br>
+            <h2 class="bold headerWinners">Hall of Fame</h2>
+            <div class="border-primary rounded-more-corners winnerList text-center" >
+                <div>
+                    <ul id="scoreList"><li>Play!!!</li></ul>
+                </div>
+            </div>
+            <div class="text-right"><span class="flag default">v. 1.0</span></div>
+        </div>
     </div>
 </div>
-
-
 </body>
 <script>window.onload = fNewGame();</script>
 
