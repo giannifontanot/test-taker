@@ -1,35 +1,80 @@
-body{
-    font-family: 'open sans', 'Helvetica Neue', Helvetica, sans-serif, serif
-}
-.game{
-    width: 100%;
-    bxorder: 1px solid red;
+body {
+    font-family: 'open sans', 'Helvetica Neue', Helvetica, sans-serif, serif;
 }
 
-#divQuestion{
-    background-color: teal;
+.game {
 
+    background-color: white;
 }
 
-#divQuestion{
+#divQuestion {
+    font-size: 150%;
     align-content: center;
     width: 100%;
-    background-color: coral;
-    border: 10px solid blue;
+    margin: 5px;
+    padding: 5px;
+
 }
 
-.Option:hover{
-    background-color: red;
+.Option {
+    border: 1px solid lightgray;
 }
-#divTimer{
-    bxackground-color: black;
+
+.Option:hover {
+    background-color: lightgray;
+}
+
+#divTimer {
     color: green;
     font-size: 40pt;
     font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
 }
 
-.valixgn{
-    width: 100px;  /* Or whatever */
-    height: 100px; /* Or whatever */
-    margin: auto;  /* Magic! */
+.banner-area {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/goldengateBlur.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.panel-header {
+    background-color: white;
+}
+
+.panel {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+.winnerList {
+    background-color: #ccc;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.headerWinners{
+    font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.scoreContainer{
+    font-size: 150%;
+    font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.timerContainer{
+    font-size: 150%;
+    font-family: Rockwell, Rotobo, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: auto;
+    margin-bottom: auto;
 }
