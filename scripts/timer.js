@@ -1,4 +1,3 @@
-
 /*
 //////////////////////////////
 // COUNTDOWN TIMER
@@ -8,10 +7,10 @@
 */
 
 function countdown(minutes, seconds) {
-    var seconds = 60;
     var mins = minutes
 
     function tick() {
+        //var seconds = 60;
         var divTimer = document.getElementById("divTimer");
         var current_minutes = mins - 1
         seconds--;

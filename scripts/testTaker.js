@@ -95,21 +95,34 @@ function fBegin(e) {
     document.getElementById("divText").style.display = "none";
     document.getElementById("btnBegin").style.display = "none";
 
-    countdown(1);
-    getNextQuestion();
+     countdown(1,60);
+     getNextQuestion();
 }
 
 function fAnswerSelected(answerSelected) {
     if ("DIV" + JsonQuestions[questionNum].answer.toString().toUpperCase() === answerSelected.id.toString().toUpperCase()) {
-        document.getElementById("divAnswer").innerHTML = "Right";
+        sendMessage("RIGHT!!!", "success");
         questionNum++;
         score++;
         document.getElementById("divScore").innerHTML = score;
-        setTimeout(getNextQuestion, 1000);
+        setTimeout(getNextQuestion, 2000);
     } else {
-        document.getElementById("divAnswer").innerHTML = "Wrong";
+        sendMessage("WRONG!!! - 10 seconds penalty!!!", "secondary");
+        clearInterval(timeoutHandle);
+        const timerEl = document.getElementById("divTimer").innerHTML;
+        let  newSeconds  = timerEl.substring(timerEl.length-2);
+        newSeconds = newSeconds - 10;
+         countdown(1,newSeconds);
         questionNum++;
-        setTimeout(getNextQuestion, 1000);
+        setTimeout(getNextQuestion, 2000);
     }
+}
+
+function sendMessage(message, context) {
+    messageEl.innerText = message;
+    messageEl.style.display = 'block';
+    messageEl.className = "btn " + context + " glow full-width";
+
+
 }
 
