@@ -18,7 +18,8 @@ This small app will give some questions to the user and is expecting good answer
 ## Installation
 This project is very simple. What we need is just a modern browser!
 ## Usage
-- Write your name and click "Begin Test" - Answer the questopns as fast as you can! - Get your score and feel produd of your achivements.
+- Write your name and click "Begin Test" - Answer the questions as fast as you can! - Get your score and feel produd 
+  of your achivements.
 
 ![test-taker.gif](test-taker.gif)
 ## Credits
