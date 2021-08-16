@@ -7,28 +7,42 @@ const totalQuestions = JsonQuestions.length;
 
 
 function fShowThisResult() {
+    let header = "Hey, you can do better ";
     let user = document.getElementById("divUser").value;
-    alert(user + ", your score is: " + score);
+    if (score > 0){
+        header = "CONGRATULATIONS ";
+    }
+    alert( header+ user + "!!! \r\n Your score is: " + score);
     let newScore = {"student": user, "score": "" + score};
     let JsonScores = JSON.parse(localStorage.getItem("JsonScores"));
     JsonScores.push(newScore);
-    localStorage.setItem("JsonScores",JSON.stringify(JsonScores));
-}
+    localStorage.setItem("JsonScores", JSON.stringify(JsonScores));
+ }
 
 function fShowScores() {
+    // localStorage.clear();
     let sScoreContent = "";
     let JsonScores = JSON.parse(localStorage.getItem("JsonScores"));
-    for (let i = 0; i < JsonScores.length; i++) {
-        sScoreContent += JsonScores[i].student + " - " + JsonScores[i].score + "</<br>";
+
+    if (JsonScores.length > 0) {
+        document.getElementById('scoreList').innerHTML = "";
     }
-    alert(sScoreContent);
-    let modal = $('#exampleModal');
-    modal.find('.modal-body').text('New message to ');
-    // modal.find('.modal-body input')..val(sScoreContent);
+
+    console.log("---> JsonScores :" + JsonScores);
+    for (let i = 0; i < JsonScores.length; i++) {
+        sScoreContent = JsonScores[i].student + " - " + JsonScores[i].score + " points."
+        let newLi = document.createElement("li");
+        newLi.innerText = sScoreContent;
+        let scoreListEl = document.getElementById("scoreList");
+        scoreListEl.appendChild(newLi);
+    }
+
 
 }
 
 function getNextQuestion() {
+    messageEl.style.display = "none";
+
     if ((totalQuestions === (questionNum))) {
         clearInterval(timeoutHandle);
         fShowThisResult();
