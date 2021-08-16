@@ -1,5 +1,3 @@
-
-
 let questionNum = 0;
 let timeoutHandle;
 let score = 0;
